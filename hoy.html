@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos2.css"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <title>RUTINAS HOY</title>
+  </head>
+  <body>
+    
+    
+    <header class="container-fluid aplicacion">
+        <div class="row ">
+            <article class="col-10 text-start" >
+                <p class="navbar-brand fs-3 color-texto mt-2 fw-bold px-4">GYM Fitness Power</p>
+            </article>
+            <article class="col-2" id="logo">
+                <img src="img/barbell_80px.png" style="width: 5em; height: 5em;
+                    display: block;"class="rounded me-8">
+            </article>
+
+            
+        </div>
+    </header>
+
+    <nav class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false" data-bs-scroll="true" aria-labelledby="offcanvas">
+        <div class="offcanvas-header aplicacion color-texto">
+            <h6 class="offcanvas-title d-none d-sm-block fw-bolder color-texto" id="offcanvas">Menu</h6>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0 color-azul2 ">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 " id="menu">
+                <li class="nav-item">
+                    <a href="cliente.html" class="nav-link text-truncate">
+                        <img src="img/home_50px.png"> <span class="ms-1 d-none d-sm-inline fw-bolder color-texto">Inicio</span>
+                    </a>
+                </li>
+
+                <!--RUTINAS Y MENU-->
+                <li class="dropdown p-3">
+                    <a href="#" class="nav-link dropdown-toggle  text-truncate" id="rutinas" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/calendar_50px.png" alt="">
+                        <span class="ms-1 d-none d-sm-inline fw-bolder color-texto">Rutinas</span>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
+                        <li><a class="dropdown-item" href="lista.html">Lista</a></li>
+                        <li><a class="dropdown-item" href="hoy.html">Hoy</a></li>
+                        <li><a class="dropdown-item" href="calendario.html">Calendario</a></li>
+                    </ul>
+                </li>
+                
+                <!--MEMBRESIAS Y MENU-->
+                <li class="dropdown p-3">
+                  <a href="#" class="nav-link dropdown-toggle  text-truncate" id="membresia" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="img/membership_card_50px.png"> <span class="ms-1 d-none d-sm-inline fw-bolder color-texto">Memebresias</span>
+                  </a>
+                  <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
+                      <li><a class="dropdown-item" href="MEMBRESIAVER.HTML">Ver</a></li>
+                      <li><a class="dropdown-item" href="MEMBRESIACAMBIAR.HTML">Cambiar</a></li>
+                  </ul>
+              </li>
+
+              <!--PAGOS-->
+              <li class="p-3">
+                  <a href="PAGO.html" class="nav-link text-truncate">
+                      <img src="img/pay_50px.png" alt=""> <span class="ms-1 d-none d-sm-inline fw-bolder color-texto">Pagos</span></a>
+              </li>
+                <!--Ubicacion-->
+                <li class="p-3">
+                    <a href="ubicacion.html" class="nav-link text-truncate">
+                        <img src="img/mapa-w.png" alt=""> <span class="ms-1 d-none d-sm-inline fw-bolder color-texto">Ubicacion</span></a>
+                </li>
+
+                <!--ESPACIO-->
+                <li>
+                    <hr class="dropdown-divider ">
+                </li>
+
+                <!--SAlir-->
+                <li class="p-3">
+                    <a href="login_cliente.html" class="nav-link text-truncate border-top">
+                        <img src="img/Logout_50px.png" alt=""><span class="ms-1 d-none d-sm-inline fw-bolder color-texto">Salir</span> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<section class="text-center text-lg-start ">
+    <article class="d-flex  justify-content-lg-between border-bottom " style="background-color: rgb(5, 80, 82);">
+      <!-- Left boton desplegable-->
+      <div>
+        <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+            <i class="bi bi-border-width fs-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" style="color: white;"></i>
+        </button>
+        <span class="fs-3 text-white " >BIENBENIDO DANIEL</span>
+      </div>
+      <!-- Right -->
+      <div class="me-5 d-none d-lg-block mt-1">
+        <span class="fs-3 text-white" >IP:48748788</span>
+      </div>
+      <!-- Right -->
+    </article>
+
+    <article class=" fw-bold text-center" style="background-color: rgb(243, 242, 201);">
+        <span class="fs-4 text-dark " >LISTA DE RUTINAS</span>
+    </article>
+
+
+    <form>
+        <article class="d-flex  justify-content-lg-between" style="background-color: rgb(243, 242, 201);">
+            <div>
+                <button type="button" class="btn btn-success mx-3">Inicar rutina</button>
+            </div>
+            <!-- Right -->
+            <div class="me-3 mt-1">
+                <span class="fw-bolder text-black" >Lista de ejerciciso hoy 04/12/2021</span>
+            </div>
+        </article>
+
+        
+
+
+
+
+
+        <article class="p-4" style="background-color: rgb(243, 242, 201);">
+            <div class="container" style="margin-top: 10px;padding: 5px" style="background-color: rgb(243, 242, 201);">
+                <table id="tablax" class="table table-striped table-bordered  table-dark" style="width:100%">
+                    <thead>
+                        <th class="bg-success">Nombre</th>
+                            <th class="bg-success">Series</th>
+                            <th class="bg-success">Repeticiones</th>
+                            <th class="bg-success">Maquina</th>
+                            <th class="bg-success">Realizado</th>
+                            <th class="bg-success">Accion</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr>
+                        <tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr><tr>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>**********</td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                                </div>
+                            </td>
+                            <td> <a type="button" class="btn btn-success" href="rutina.html"><i class="bi bi-eye-fill"></i></a> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        <span class="fw-bolder">Progreso:</span>
+        <div class="container my-3"> 
+            <div class="row"> 
+                <div class="col-10">
+                    <div class="progress mx-10 bg-light ">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="d-flex my-3">
+            <div>
+                <a href="registro.html" class="btn btn-success">Finalizar rutina</a>
+            </div>
+        </div>
+
+        </article>
+    </form>
+</section>
+
+
+    
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Copyright -->
+    <div class="text-center p-4" >
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">GYM Fitnes Power</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+     <!-- JQUERY -->
+     <script src="https://code.jquery.com/jquery-3.4.1.js"
+     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+     </script>
+ <!-- DATATABLES -->
+ <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+ </script>
+ <!-- BOOTSTRAP -->
+ <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js">
+ </script>
+ <script>
+     $(document).ready(function () {
+         $('#tablax').DataTable({
+             language: {
+                 processing: "Tratamiento en curso...",
+                 search: "Buscar&nbsp;:",
+                 lengthMenu: "Agrupar de _MENU_ items",
+                 info: "Mostrando del item _START_ al _END_ de un total de _TOTAL_ items",
+                 infoEmpty: "No existen datos.",
+                 infoFiltered: "(filtrado de _MAX_ elementos en total)",
+                 infoPostFix: "",
+                 loadingRecords: "Cargando...",
+                 zeroRecords: "No se encontraron datos con tu busqueda",
+                 emptyTable: "No hay datos disponibles en la tabla.",
+                 paginate: {
+                     first: "Primero",
+                     previous: "Anterior",
+                     next: "Siguiente",
+                     last: "Ultimo"
+                 },
+                 aria: {
+                     sortAscending: ": active para ordenar la columna en orden ascendente",
+                     sortDescending: ": active para ordenar la columna en orden descendente"
+                 }
+             },
+             scrollY: 400,
+             lengthMenu: [ [10, 25, -1], [10, 25, "All"] ],
+         });
+     });
+ </script>
+  </body>
+</html>

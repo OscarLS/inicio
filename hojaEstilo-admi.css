@@ -1,0 +1,178 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;    
+}
+
+.color-primario {
+    background-color: rgb(0, 54, 56);
+    color: white;
+}
+
+header img{
+    width: 5em;
+    height: 5em;
+    display: block;
+    padding: 0.5em;
+}
+
+.color-secundario{
+    background-color: rgb(5, 80, 82);   
+    color: white;
+}
+
+.color-contenido{
+    background-color: rgb(243, 242, 201);
+}
+h6, span{
+    color: white;
+}
+
+section{
+    text-align: center;
+}
+
+#tarjeta-fecha{
+    height: auto;
+    width: auto;
+    color: white;
+    background-color: rgb(83, 184, 187);
+
+}
+
+.tarjetas-info{
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    
+}
+
+.tajeta-fecha{
+  height: 4em;
+  width: 3em;
+}
+
+.img-carrusel{
+    width: 25em;
+    height: 20em;
+
+}
+
+#imagen-opaca{
+  opacity: 1;
+}
+
+footer{
+    text-align: center;
+    padding:1em ;
+    background-color: gainsboro;    
+}
+footer div{
+    text-align: center;
+    padding: 4;
+}
+
+.texto-justificado{
+  text-align: justify;
+  }
+
+a img{
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    margin: auto;
+}
+
+img-estilo{
+  width: 14em; 
+  height: 24em;
+  
+}
+
+
+/* HASTA ACA SON MIS ESTILOS*/
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #6AA84F;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #6AA84F;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 17px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  
+  .diseño-tabla{
+      padding: 0.5em 4em;
+  }
+  #tabla1{
+      border: 1px solid black;
+      
+  }
+
+

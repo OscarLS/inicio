@@ -1,0 +1,98 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;    
+}
+
+header {
+    padding: 0.5em;
+    
+    background-color: rgb(160, 158, 158);
+}
+
+
+#opciones li{
+    padding: 0.5em 0em;
+    
+}
+
+#listaPrincipal{
+    width: 11em;
+    height: 40em;    
+}
+
+#flex{    
+    padding: 0.5em;
+}
+
+footer{
+    padding:1em ;
+    background-color: gainsboro;
+    
+}
+section p{
+    border-bottom: 3.5px solid rgb(224, 222, 222);
+    
+}
+#titulo{
+    border-bottom: 3.5px solid rgb(224, 222, 222);
+    
+}
+
+
+img{
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    margin: auto;
+
+}
+
+.borde {
+    margin: 5px;
+    border: 1px rgb(0, 0, 0);
+}
+
+.aplicacion{
+    background-color: rgb(0, 54, 56);   
+    
+}
+
+.color-texto{
+    color: white;
+}
+
+.color-azul{
+    color: rgb(5, 80, 82);
+}
+.color-azul2{
+    background-color: rgb(5, 80, 82);
+}
+.color-claro {
+    background-color: rgb(243, 242, 201);
+}
+
+.barra{
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+

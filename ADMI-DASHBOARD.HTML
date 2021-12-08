@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous">
+
+    <link rel="stylesheet" href="hojaEstilo-admi.css">
+
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <title>ADMINISTRADOR-INICIO</title>
+  </head>
+  <body>
+
+
+    <header class="container-fluid color-primario">
+      <div class="row">
+        <article class="col-10 text-start">
+          <p class="navbar-brand fs-3 mt-2 fw-bold px-4">GYM Fitness Power</p>
+        </article>
+        <article class="col-2" id="logo">
+          <img src="img/barbell_80px.png" class="rounded me-8">
+        </article>
+      </div>
+    </header>
+
+    <nav class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas"
+      data-bs-keyboard="false" data-bs-backdrop="false" data-bs-scroll="true"
+      aria-labelledby="offcanvas">
+      <div class="offcanvas-header color-primario text-light">
+        <h6 class="offcanvas-title d-none d-sm-block fw-bolder" id="offcanvas">Menu</h6>
+        <button type="button" class="btn-close btn-close-white text-reset"
+          data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body px-0 color-secundario">
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0" id="menu">
+          <li class="nav-item">
+            <a href="ADMI-DASHBOARD.HTML" class="nav-link text-truncate">
+              <img src="img/home_50px.png"> <span class="ms-1 d-none d-sm-inline
+                fw-bolder">Inicio</span>
+            </a>
+          </li>
+
+          <!--CLIENTES Y MENU-->
+          <li class="dropdown p-3">
+            <a href="#" class="nav-link dropdown-toggle text-truncate"
+              id="clientes" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/users_50px.png" alt=""> <span class="ms-1 d-none
+                d-sm-inline fw-bolder">Clientes</span>
+            </a>
+            <ul class="dropdown-menu text-small shadow"
+              aria-labelledby="dropdown">
+              <li><a class="dropdown-item" href="ADMI-CLIENTE-VER.html">Ver</a></li>
+              <li><a class="dropdown-item" href="ADMI-CLIENTE-ASGINACION.html">Asignar</a></li>
+            </ul>
+          </li>
+
+          <!--RUTINAS Y MENU-->
+          <li class="dropdown p-3">
+            <a href="#" class="nav-link dropdown-toggle text-truncate"
+              id="rutinas" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/calendar_50px.png" alt="">
+              <span class="ms-1 d-none d-sm-inline fw-bolder">Rutinas</span>
+            </a>
+            <ul class="dropdown-menu text-small shadow"
+              aria-labelledby="dropdown">
+              <li><a class="dropdown-item" href="ADMI-RUTINAS-VER.html">Ver</a></li>
+              <li><a class="dropdown-item" href="ADMI-RUTINA-AGREGAR.html">Agregar</a></li>
+            </ul>
+          </li>
+
+          <!--MEMBRESIAS Y MENU-->
+          <li class="dropdown p-3">
+            <a href="#" class="nav-link dropdown-toggle text-truncate"
+              id="membresia" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/membership_card_50px.png"> <span class="ms-1 d-none
+                d-sm-inline fw-bolder">Memebresias</span>
+            </a>
+            <ul class="dropdown-menu text-small shadow"
+              aria-labelledby="dropdown">
+              <li><a class="dropdown-item" href="ADMI-MEMB-VER.HTML">Ver</a></li>
+              <li><a class="dropdown-item" href="ADMI-MEMBRESIA-AGREGAR.html">Agregar</a></li>
+            </ul>
+          </li>
+
+          <!--MAQUINAS Y MENU-->
+          <li class="dropdown p-3">
+            <a href="#" class="nav-link dropdown-toggle text-truncate"
+              id="maquinas" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/treadmill_50px.png" alt=""> <span class="ms-1 d-none
+                d-sm-inline fw-bolder">Maquinas</span>
+            </a>
+            <ul class="dropdown-menu text-small shadow"
+              aria-labelledby="dropdown">
+              <li><a class="dropdown-item" href="ADMI-MAQUINA-VER.HTML">Ver</a></li>
+              <li><a class="dropdown-item" href="ADMI-MAQUINAS-AGREGAR.html">Agregar</a></li>
+            </ul>
+          </li>
+
+          <!--PAGOS-->
+          <li class="p-3">
+            <a href="ADMI-PAGO-ESTADO.html" class="nav-link text-truncate">
+              <img src="img/pay_50px.png" alt=""> <span class="ms-1 d-none
+                d-sm-inline fw-bolder">Pagos</span></a>
+          </li>
+
+          <!--ESPACIO-->
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <!--SAlir-->
+          <li class="p-3">
+            <a href="login_cliente.html" class="nav-link text-truncate
+              border-top">
+              <img src="img/Logout_50px.png" alt=""><span class="ms-1 d-none
+                d-sm-inline fw-bolder">Salir</span> </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <section class="text-lg-start"">
+      <article class="d-flex justify-content-lg-between border-bottom
+        color-secundario">
+        <!-- Left boton desplegable-->
+        <div>
+
+          <button class="btn" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas" role="button">
+            <i class="bi bi-border-width fs-2 text-light"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+          </button>
+
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="me-5 d-lg-block mt-3">
+          <span class="fs-3">ADMINISTRADOR</span>
+        </div>
+        <!-- Right -->
+      </article>
+
+      <article class="fw-bold text-center color-contenido">
+        <span class="fs-4 text-dark">BIENVENIDO </span>
+      </article>
+
+      <!----------------------------------------------------------->
+      <article class="p-4 row color-contenido">
+
+        <div class="col-9 col-md-7">
+          <div class="card text-dark">
+            <img src="img/R.jpg" class="card-img" id="imagen-opaca" alt="">
+
+            <div class="card-img-overlay">
+              <h5 class="card-title fw-bold"> 7/DIC/2021</h5>
+
+              <!-- weather widget start -->
+              <div class="bg-light">
+                <div id="m-booked-prime-days-58408"> <div
+                    class="weather-customize widget-type-prime-days"> <div
+                      class="booked-prime-days-in"> <div
+                        class="booked-prime-days-data">
+                        <div class="booked-pd-today"> <div
+                            class="booked-pd-today-img
+                            wrz-18"></div> <div
+                            class="booked-pd-today-temperature"> <div
+                              class="booked-wzs-pd-val"> <div
+                                class="booked-wzs-pd-number"><span class="plus">+</span>32</div>
+                              <div class="booked-wzs-pd-dergee"> <div
+                                  class="booked-wzs-pd-dergee-val">&deg;</div>
+                                <div
+                                  class="booked-wzs-pd-dergee-name">C</div>
+                              </div>
+                            </div>
+                          </div> <div class="booked-pd-today-extreme"> <div
+                              class="booked-pd booked-pd-h"><span style="color:
+                                black;">Alta:</span><span
+                                class="plus"style="color: black;">+</span>32</div>
+                            <div
+                              class="booked-pd
+                              booked-pd-l" style="color: black;"><span
+                                style="color: black;">Baja:</span><span
+                                class="plus" style="color: black;">+</span>23</div>
+                          </div> </div> <div class="booked-pd-ndays"> <div
+                            class="booked-pd-nitem"> <div class="booked-pd-nidi
+                              wrz-sml
+                              wrzs-01"></div> <div class="booked-pd-nidw">Mie</div>
+                          </div>
+                          <div class="booked-pd-nitem"> <div
+                              class="booked-pd-nidi
+                              wrz-sml
+                              wrzs-18"></div> <div class="booked-pd-nidw">Juv</div>
+                          </div>
+                          <div class="booked-pd-nitem"> <div
+                              class="booked-pd-nidi
+                              wrz-sml
+                              wrzs-18"></div> <div class="booked-pd-nidw">Vie</div>
+                          </div>
+                          <div class="booked-pd-nitem"> <div
+                              class="booked-pd-nidi
+                              wrz-sml
+                              wrzs-18"></div> <div class="booked-pd-nidw">Sáb</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script type="text/javascript"> 
+                     var css_file=document.createElement("link"); 
+                     var widgetUrl = location.href; 
+                     css_file.setAttribute("rel","stylesheet"); 
+                     css_file.setAttribute("type","text/css"); 
+                     css_file.setAttribute("href",'https://s.bookcdn.com/css/w/booked-wzs-widget-prime-days.css?v=0.0.1'); 
+                     document.getElementsByTagName("head")[0].appendChild(css_file); 
+                     function setWidgetData_58408(data) { 
+                       if(typeof(data) != 'undefined' && data.results.length > 0) { 
+                         for(var i = 0; i < data.results.length; ++i) { 
+                           var objMainBlock = document.getElementById('m-booked-prime-days-58408'); 
+                           if(objMainBlock !== null) { 
+                             var copyBlock = document.getElementById('m-bookew-weather-copy-'+data.results[i].widget_type); 
+                             objMainBlock.innerHTML = data.results[i].html_code; if(copyBlock !== null) objMainBlock.appendChild(copyBlock);
+                              } } } else { 
+                                alert('data=undefined||data.results is empty'); } } 
+                                var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=62507;type=6;scode=2;ltid=3458;domid=583;anc_id=36681;countday=undefined;cmetric=1;wlangID=4;color=137AE9;wwidth=160;header_color=ffffff;text_color=333333;link_color=08488D;border_form=1;footer_color=ffffff;footer_text_color=333333;transparent=0;v=0.0.1";
+                                widgetSrc += ';ref=' + widgetUrl;widgetSrc += ';rand_id=58408';
+                                var weatherBookedScript = document.createElement("script"); 
+                                weatherBookedScript.setAttribute("type", "text/javascript"); 
+                                weatherBookedScript.src = widgetSrc; 
+                                document.body.appendChild(weatherBookedScript) </script><!-- weather widget end -->
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="col-3 col-md-5">
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+
+            <div class="col"> <!--TOTAL DE CLIENTES 1-->
+              <div class="card tarjetas-info" style="background-color:rgb(224,
+                235, 9);">
+                <div class="card-body">
+                  <img src="img/users_50px.png" class="card-img-top" alt=""
+                    style="width: 2.2em; height: 2.2em;">
+                </div>
+                <div class="card-title row p-1 badge text-wrap">
+
+                  <small class="col fw-bold p-1 text-center">
+                    <p class="fw-bold fs-4">200</p>
+
+                    <p>Clientes</p></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col"> <!--CANTIDAD DE CLIENTES HOY 1-->
+
+
+              <div class="card tarjetas-info" style="background-color:red;">
+                <div class="card-body">
+                  <img src="img/clientes2.png" class="card-img-top" alt=""
+                    style="width: 2.2em; height: 2.2em;">
+                </div>
+                <div class="card-title row p-1 badge text-wrap">
+
+                  <small class="col fw-bold p-1 text-center">
+                    <p class="fw-bold fs-4">50</p>
+
+                    <p>Asistencias</p></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col"> <!--TOTAL DE CLIENTES 1-->
+              <div class="card h-100 tarjetas-info"
+                style="background-color:teal;">
+
+                <div class="card-body">
+                  <img src="img/users_50px.png" class="card-img-top" alt=""
+                    style="width: 2.2em; height: 2.2em;">
+                </div>
+                <div class="card-title row p-1 badge text-wrap">
+
+                  <small class="col fw-bold p-1 text-center">
+                    <p class="fw-bold fs-4">15</p>
+
+                    <p>NUEVOS</p></small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="d-none d-md-block col-md-12 p-2">
+            <div id="carouselExampleIndicators" class="carousel slide"
+              data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/1.jpg" class="d-block img-carrusel" alt="">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/2.jpg" class="d-block img-carrusel" alt="">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/espalda.jpg" class="d-block img-carrusel"
+                    alt="">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/4.jpg" class="d-block img-carrusel" alt="">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/gluteos.jpg" class="d-block img-carrusel"
+                    alt="">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/6.jpg" class="d-block img-carrusel" alt="">
+                </div>
+
+              </div>
+
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+      </article>
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-lg-start bg-light text-muted">
+      <!-- Copyright -->
+      <div>
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="#">GYM Fitnes Power</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
