@@ -15,9 +15,10 @@
 
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-        <title>MAQUINAS-VER</title>
+        <title>RUTINAS-AGREGAR</title>
     </head>
     <body>
+
 
         <header class="container-fluid color-primario">
             <div class="row">
@@ -142,7 +143,6 @@
         </nav>
 
 
-
         <section class="text-lg-start"">
             <article class="d-flex justify-content-lg-between border-bottom
                 color-secundario">
@@ -167,80 +167,98 @@
             </article>
 
             <article class="fw-bold text-center color-contenido">
-                <span class="fs-4 text-dark">Agregar Maquina </span>
+                <span class="fs-4 text-dark">EDITAR RUTINAS </span>
             </article>
 
-            <article class="p-4 color-contenido">					
-					<form>
-                        <div class="form-group p-2" >
-                            <label for="codigo">Nombre:</label> 
-                            <input type="text" class="form-control" id="nombre" placeholder="Escribe el nombre de la maquina" required pattern=/^[A-Za-z]+ title="Solo escribir letras"> 
-                        </div> 
-                        <div class="form-group p-2">
-                            <label for="codigo">Modelo:</label> 
-                            <input type="text" class="form-control" id="modelo" placeholder="Modelo de la maquina" title="Descripcion del codigo de barras"> 
-                        </div>
-                        <div class="form-group p-2">
-                            <label for="codigo">Unidades:</label> <input type="text" class="form-control" id="unidad" placeholder="Cantidad de maquinas con las que se cuentan" required pattern=/^[0-9]+ title="Solo numeros"> 
-                        </div>
-                        <div class="form-group p-2">
-                            <label for="codigo">Tipo:</label>
-                            <select class="form-control" id="tipo">
-                                <option>Pierna</option>
-                                <option>Brazo</option>
-                                <option>Espalda</option>
-                                <option>Trisep</option>
-                            </select> 
-                        </div>
-                        <div class="form-group p-2">
-                            <label for="codigo">Descripcion:</label> <input type="text" class="form-control" id="descrip" placeholder="Descripcion de la maquina" title="describir la maquina"> 
-                        </div>
-                        <div class="form-group p-2">
-                            <label for="codigo">Subir imagen:</label> <input type="file" class="form-control-file" id="img"> 
-                        </div>
+            <article class="p-4  color-contenido">
 
-                        <div class="d-block p-2">
-                            <button type="submit" class="mb-2 mt-1 btn-hover  btn btn-success "> Agregar </button> 
-                            <button type="reset" class="mb-2 mt-1 btn-hover  btn btn-danger "> Cancelar </button>
-                        </div>
-                        
-                    </form>
+                <div class="form-group p-2">
+                    <label   for="codigo">Nombre:</label>
+                    <input type="text" class="form-control " id="nombre"
+                        placeholder="Escribe el nombre de la maquina" required
+                        pattern="[A-Za-z\s]+"
+                        title="Solo escribir letras">
+                </div>
 
-                   
+                <div class="form-group p-2">
+                    <label for="codigo">Serie:</label>
+                    <input type="text" class="form-control" id="serie"
+                        placeholder="Modelo de la maquina" required
+                        pattern=/^[0-9]+ title="Solo numeros">
+                </div>
 
+                <div class="form-group p-2">
+                    <label for="codigo">Repeticiones:</label>
+                    <input type="text" class="form-control" id="repe"
+                        placeholder="Cantidad de repeticiones"
+                        required pattern="[0-9]+"
+                        title="Solo numeros">
+                </div>
 
+                <div class="form-group p-2">
+                    <label for="codigo">Maquina:</label> <select
+                        class="form-control" id="maquina">
+                        <option>maquina</option>
+                        <option>Brazo</option>
+                        <option>Espalda</option>
+                        <option>Trisep</option>
+                    </select>
+                </div>
 
-            </article>
+                <div class="form-group p-2">
+                    <label for="codigo">Tipo:</label> <select
+                        class="form-control" id="tipo">
+                        <option>Pierna</option>
+                        <option>Brazo</option>
+                        <option>Espalda</option>
+                        <option>Trisep</option>
+                    </select>
+                </div>
 
+                <div class="form-group p-2">
+                    <label for="codigo">Descripcion:</label> <input type="text"
+                        class="form-control" id="descrip"
+                        maxlength="50"
+                        placeholder="Descripcion de la maquina" title="Describe la maquina">
+                </div>
 
+                <div class="form-group p-3">
+                    <label for="codigo">Subir imagen:</label> <input type="file"
+                        class="form-control-file" id="img">
+                </div>
 
+                <button type="submit" class="mb-2 mt-1 btn-hover btn btn
+                    btn-success p-2"> Agregar </button>
                     
+                <button type="reset" class="mb-2 mt-1 btn-hover btn btn
+                    btn-danger p-2"> Cancelar </button>
+            </form>
+
+        </article>
+        </section>
 
 
 
-                </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Copyright -->
+            <div class="text-center p-4">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="#">GYM Fitnes Power</a>
             </div>
-        </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 
-
-
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Copyright -->
-    <div class="text-center p-4">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="#">GYM Fitnes Power</a>
-    </div>
-    <!-- Copyright -->
-</footer>
-<!-- Footer -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-
-</body>
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    </body>
 </html>
