@@ -128,40 +128,54 @@
     </article>
 
     <article class=" fw-bold text-center color-contenido" >
-        <span class="fs-4 text-dark " >Agregar membresia </span>
+        <span class="fs-4 text-dark " >NUEVA MEMBRESIA </span>
     </article>
 
     <article class="p-4 color-contenido" >
         
-    
-	<form>
+        <form class="row" >            
 
-        <div class="form-group " <!--style="padding: 1em;-->">
-        <label for="codigo">Nombre:</label> 
-        <input type="text" class="form-control" id="nombre" placeholder="Escribe el nombre de la maquina" required pattern=/^[A-Za-z]+ title="Solo escribir letras"> 
-        </div> 
-        <div class="form-group">
-        <label for="codigo">Duracion:</label> 
-        <input type="text" class="form-control" id="duracion" placeholder="Dias de la rutina"  required pattern=/^[0-9]+ title="Solo numeros enteros"> 
-        </div>
-        <div class="form-group">
-        <label for="codigo">Precio:</label> <input type="text" class="form-control" id="precio" placeholder="Costo de la membresia"> 
-        </div>
-        <div class="form-group">
-        <label for="codigo">Tipo:</label> <select class="form-control" id="tipo">
-                <option>Semanal</option>
-                <option>Mensual</option>
-            </select> 
-        </div>
-        <div class="form-group">
-        <label for="codigo">Descripcion:</label> <input type="text" class="form-control" id="descrip" placeholder="Descripcion de la maquina" title="describir la maquina"> 
-        </div>
-        <button type="submit" class="mb-2 mt-1 btn-hover btn btn btn-success"> Agregar </button> 
-        <button type="reset" class="mb-2 mt-1 btn-hover btn btn btn-danger"> Cancelar </button>
+                <div class="col-12 col-md-6 form-group p-2">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="NOMBRE" aria-label="NOMBRE" 
+                     required  pattern="[A-Za-z\s]+" title="Solo escribir letras">
+                </div>
+
+                <div class="form-group col-12 col-md-6 p-2">
+                    <label for="codigo">Tipo:</label>
+                    <select class="form-control" id="tipo">
+                        <option>Semanal</option>
+                        <option>Mensual</option>
+                    </select> 
+                </div>
+
+                <div class="form-group col-12 col-md-6 p-2">
+                    <label for="codigo">Duracion:</label> 
+                    <input type="text" class="form-control" id="duracion" placeholder="Dias de la rutina"  required  pattern="[0-9]+" title="Solo numeros enteros"> <!--pattern=/^[0-9]+-->
+                </div>
+
+                <div class="form-group col-12 col-md-6 p-2">
+                    <label for="codigo">Precio:</label> <input type="text" class="form-control" id="precio" required pattern="[0-9]+" placeholder="Costo de la membresia" title="Solo numeros enteros"> 
+                </div>
+            
+            <div class="form-floating py-3 form-group col-6 p-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                <label for="floatingTextarea2">DESCRIPCION</label>
+            </div>
+
+            <div class="d-block p-2">
+                <button type="submit" class="mb-2 mt-1 btn-hover  btn btn-success " style="width: 10em;" > Agregar </button> 
+                <a class="mb-2 mt-1 btn-hover  btn btn-danger " href="ADMI-MEMB-VER.HTML" role="button"  style="width: 10em;" >Cancelar</a>
+                
+            </div>
+              
     </form>
-</article>
+        
+    </article>
 	
 </section>
+
+
 
 
     
@@ -177,13 +191,12 @@
   </footer>
   <!-- Footer -->
 
+  
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+
   </body>
 </html>

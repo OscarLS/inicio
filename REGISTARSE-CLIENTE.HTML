@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilo-registro.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <title>REGISTRO NUEVO CLIENTE</title>
+  </head>
+  <body>  
+
+    <header class="container-fluid color-primario">
+      <div class="row ">
+          <article class="col-10 text-start" >
+              <p class="navbar-brand fs-3 color-texto mt-2 fw-bold px-4">GYM Fitness Power</p>
+          </article>
+          <article class="col-2" id="logo">
+              <img src="img/barbell_80px.png" style="width: 5em; height: 5em;
+                  display: block;"class="rounded me-8">
+          </article>          
+      </div>
+  </header>
+
+  <section class="color-contenido   ">
+    <span class="fs-4 text-black " >
+        <p style="font-weight: 700;">REGISTRO</p>
+        <p class="fs-6">Datos Personales </p>
+        
+    </span>
+
+    <article >
+        <form action="" class="formulario row" id="formulario">
+
+
+            <!--GRUPO NOMBRE-->    
+           <div class="formulario__grupo col-12 col-md-5" id="grupo__nombre">
+   
+               <label for="nombre" class="formulario__label">Nombre</label>
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Jhon ">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>            
+               <p class="formulario__input-error">El nombre solo puede de contener letras y espacio</p>
+           </div>
+   
+           <!--GRUPO APELLIDOS-->    
+           <div class="formulario__grupo col-12 col-md-6" id="grupo__apellidos">
+   
+               <label for="apellidos" class="formulario__label">Apellidos</label>
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="Doe Doe">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>            
+               <p class="formulario__input-error">Los apellidos solo puede de contener letras y espacio</p>        
+           </div>
+   
+            <!--GRUPO ALTURA-->    
+            <div class="formulario__grupo col-12 col-md-4" id="grupo__altura">
+   
+               <label for="altura" class="formulario__label">Altura</label>
+               <div class="formulario__grupo-input">
+                   <input type="number" class="formulario__input" name="altura" id="altura" placeholder="cm"
+                   min="0" max="250">                
+               </div>           
+                       
+           </div>
+   
+           <!--GRUPO PESO-->    
+           <div class="formulario__grupo col-12 col-md-4" id="grupo__peso">
+   
+               <label for="peso" class="formulario__label">peso</label>
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="peso" id="peso" placeholder="cm">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>                            
+           </div>
+   
+           <!--GRUPO SEXO-->    
+           <div class="formulario__grupo col-12 col-md-3 p-0" id="grupo__sexo">
+   
+               <label for="sexo" class="formulario__label">Sexo</label>
+               <div class="formulario__grupo-input">
+                   <div><input type="radio" name="radio-sexo" id="radio-sexo-m" value="Masculino">Masculino</div>
+                   <div><input type="radio" name="radio-sexo" id="radio-sexo-f" value="Masculino">Femenino</div>
+               </div>           
+                      
+           </div>
+                   
+   
+           <!--FECHA NACIMIENTO-->
+           <div class="formulario__grupo col-12 col-md-5" id="grupo__nacimiento">
+               <label for="nacimiento" class="formulario__label">Fecha de Nacimiento</label>
+               <div class="formulario__grupo-input">                
+                   <input type="date" class="formulario__input" name="nacimiento" id="nacimiento" placeholder="cm">            
+               </div>                            
+           </div>
+   
+   
+           <!--GRUPO TELEFONO-->
+           <div class="formulario__grupo col-12 col-md-6" id="grupo__telefono">
+              
+               <label for="telefono" class="formulario__label">Telefono</label>
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1234567890">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>
+               <p class="formulario__input-error">El Telefono solo puede optener numeros de 7 a 14 digitos.</p>        
+           </div>
+   
+           <!--GRUPO CORREO ELECTRONICO-->
+           <div class="formulario__grupo col-12" id="grupo__correo">           
+               <label for="correo" class="formulario__label">Correo Electornico</label>
+               <div class="formulario__grupo-input">
+                   <input type="email" class="formulario__input" name= "correo" id="correo" placeholder="correo@correo.com">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>
+               <p class="formulario__input-error">El correo solo puede contener numeros, letras, guiones, puntos y guion bajo.</p>
+           </div>
+   
+   
+           <!--GRUPO DIRECCION-->    
+            <div class="formulario__grupo col-12" id="grupo__direccion">
+               <label for="direccion" class="formulario__label">Direccion</label>
+   
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Lorem ipsum dolor sit amet conse ·12">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>            
+               <p class="formulario__input-error">.</p>        
+           </div>
+   
+   
+           <!--GRUPO USUARIO-->
+           <div class="formulario__grupo col-12 col-md-6" id="grupo__usuario">
+              
+               <label for="usuario" class="formulario__label">Usuario</label>
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Jhon123">
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>
+               <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+           
+           </div>
+   
+       
+           <!--GRUPO CONTRASEÑA-->    
+           <div class="formulario__grupo col-12 col-md-6" id="grupo__password">
+   
+               <label for="password" class="formulario__label">Contraseña</label>
+               <div class="formulario__grupo-input">
+                   <input type="password" class="formulario__input" name="password" id="password" >
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>            
+               <p class="formulario__input-error">La contraseña debe ser de 4 a 8 digitos  </p>
+   
+           </div>
+   
+           <!--GRUPO CONTRASEÑA 2 confirmacion-->    
+           <div class="formulario__grupo col-12 col-md-5" id="grupo__password2">
+   
+               <label for="password2" class="formulario__label">Repetir Contraseña</label>
+               <div class="formulario__grupo-input">
+                   <input type="password" class="formulario__input" name="password2" id="password2" >
+                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>            
+               <p class="formulario__input-error">Ambas contraseñas deben ser iguales </p>
+   
+           </div>
+   
+   <!--datos clinicos-->
+   
+       
+            <span class="fs-4 text-black border-top" >
+                <p style="font-weight: 700;">Datos de salud</p>    
+                <h6>Para darle una mejor atencion nos es importante conocer un poco de su historial medico y asi estar preparados ante cualquier situaion.</h6>        
+            </span>
+
+        
+
+            <div class="">
+                <label for="lesion1" class="formulario__label">1.¿Ha tenido alguna lesion osea?</label>
+                <input type="radio" class="p-3" name="lesion1" id="lesion-osea-si" value="Si"> Si
+                <input type="radio" class="p-3" name="lesion1" id="lesion-osea-no" value="No"> No
+            </div>    
+
+            <div class="">
+                <label for="descripcion" class="formulario__label">Describala brevemente</label>
+                <input type="text" name="descripcion" id="descripcion" style="width: 20em;"> 
+            </div>
+            
+            <div class="p-2">
+                <label for="lesion2" class="formulario__label">2.¿Ha tenido alguna lesion muscular?</label>
+                <input type="radio" class="p-3" name="lesion2" id="lesion-muscular-si" value="Si"> Si
+                <input type="radio" class="p-3" name="lesion2" id="lesion-muscular-no" value="No"> No
+            </div> 
+
+            <div class="">
+                <label for="enfermedad" class="formulario__label">3.¿Padece alguna lesion cardiovascular?</label>
+                <input type="radio" class="p-3" name="enfermedad" id="enfermedad-cadio-si" value="Si"> Si 
+                <input type="radio" class="p-3" name="enfermedad" id="enfermedad-cardio-no" value="No"> No
+            </div> 
+
+            <div class="">
+                <label for="enfermedad2" class="formulario__label">4.¿Se asfixia con facilidad al realizar ejercicio fisico?</label>
+                <input type="radio" class="p-3" name="enfermedad2" id="enfermedad-asfixia-si" value="Si"> Si
+                <input type="radio" class="p-3" name="enfermedad2" id="enfermedad-asfixia-no" value="No"> No
+            </div>
+
+
+            <div class="">
+                <label for="enfermedad2" class="formulario__label">5.¿Es usted...?</label>
+
+                <div>
+                    <label for="asmatico" class=" px-5">Asmatico(a)</label>
+                    <input type="radio"  name="asmatico" id="enfermedad-asmatico-si" value="Si"> Si
+                    <input type="radio"  name="asmatico" id="enfermedad-asmatico-no" value="No"> No
+                </div>
+                
+                <div>
+                    <label for="epileptico" class="px-5">Epileptico(a)</label>
+                    <input type="radio" name="epileptico" id="enfermedad-epileptico-si" value="Si"> Si
+                    <input type="radio" name="epileptico" id="enfermedad-epileptico-no" value="No"> No
+                </div>
+
+                <div>
+                    <label for="diabetico" class="px-5">Diabetico(a)</label>
+                    <input type="radio" name="diabetico" id="enfermedad-diabetico-si" value="Si"> Si
+                    <input type="radio" name="diabetico" id="enfermedad-diabetico-no" value="No"> No
+                </div>
+
+                <div>
+                    <label for="fumador" class="px-5">Fumador(a)</label>
+                    <input type="radio" name="fumador" id="enfermedad-fumador-si" value="Si"> Si
+                    <input type="radio" name="fumador" id="enfermedad-fumador-no" value="No"> No
+                </div>
+            </div>
+
+            <div class="">
+                <label for="anemia" class="formulario__label">6.¿Padece de anemia?</label>
+                <input type="radio"  name="anemia" id="enfermedad-anemia-si" value="Si"> Si
+                <input type="radio"  name="anemia" id="enfermedad-anemia-no" value="No"> No
+            </div>
+
+            <!--GRUPO PARA TERMINOS Y CONDICIONES-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input type="checkbox"class="formulario__checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones.
+                </label>
+
+            </div>
+
+
+            <!--boton aceptar para enviar-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error: Por favor rellena el formulario correctamente</b></p>
+    
+            </div>
+    
+            <div class="formulario__grupo formulario__grupo-btn-enviar ">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Registro exitoso! </p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-cancelar ">
+                <a href="login_cliente.html"><button type="button" class=" btn btn-warning col-4 text-white " style="width: 13em;">Cancelar</button></a>
+                
+            </div>
+        </form>
+
+    </article>
+
+  </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Copyright -->
+      <div class="text-center p-4" >
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="#">GYM Fitnes Power</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="formulario.js"></script>
+    
+    
+  </body>
+</html>

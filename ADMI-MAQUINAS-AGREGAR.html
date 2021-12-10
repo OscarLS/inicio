@@ -174,14 +174,30 @@
 					<form>
                         <div class="form-group p-2" >
                             <label for="codigo">Nombre:</label> 
-                            <input type="text" class="form-control" id="nombre" placeholder="Escribe el nombre de la maquina" required pattern=/^[A-Za-z]+ title="Solo escribir letras"> 
+                            <input type="text" class="form-control"
+                                id="nombre"
+                                placeholder="Escribe el nombre de la maquina" 
+                                required pattern="[A-Za-z]+" 
+                                title="Solo escribir letras"> 
                         </div> 
+
                         <div class="form-group p-2">
                             <label for="codigo">Modelo:</label> 
-                            <input type="text" class="form-control" id="modelo" placeholder="Modelo de la maquina" title="Descripcion del codigo de barras"> 
+                            <input type="text" class="form-control"
+                                id="modelo" 
+                                placeholder="Modelo de la maquina" 
+                                title="Modelo de la maquina" 
+                                required pattern="[0-9]+" 
+                                title="Ingresar modelo de la maquina"> 
                         </div>
+
                         <div class="form-group p-2">
-                            <label for="codigo">Unidades:</label> <input type="text" class="form-control" id="unidad" placeholder="Cantidad de maquinas con las que se cuentan" required pattern=/^[0-9]+ title="Solo numeros"> 
+                            <label for="codigo">Unidades:</label> 
+                            <input type="text" class="form-control"
+                                id="unidad" 
+                                placeholder="Cantidad de maquinas con las que se cuentan" 
+                                required pattern="[0-9]+" 
+                                title="Ingresar solo numeros"> 
                         </div>
                         <div class="form-group p-2">
                             <label for="codigo">Tipo:</label>
@@ -193,16 +209,23 @@
                             </select> 
                         </div>
                         <div class="form-group p-2">
-                            <label for="codigo">Descripcion:</label> <input type="text" class="form-control" id="descrip" placeholder="Descripcion de la maquina" title="describir la maquina"> 
+                            <label for="codigo">Descripcion:</label>
+                            <input type="text" class="form-control" 
+                                id="descrip" 
+                                placeholder="Descripcion de la maquina" 
+                                title="describir la maquina"> 
                         </div>
                         <div class="form-group p-2">
                             <label for="codigo">Subir imagen:</label> <input type="file" class="form-control-file" id="img"> 
                         </div>
 
                         <div class="d-block p-2">
-                            <button type="submit" class="mb-2 mt-1 btn-hover  btn btn-success "> Agregar </button> 
-                            <button type="reset" class="mb-2 mt-1 btn-hover  btn btn-danger "> Cancelar </button>
+                            <button type="submit" class="mb-2 mt-1 btn-hover  btn btn-success " style="width: 10em;" > Agregar </button> 
+                            <a class="mb-2 mt-1 btn-hover  btn btn-danger " href="ADMI-MAQUINA-VER.HTML" role="button"  style="width: 10em;" >Cancelar</a>
+                            
                         </div>
+
+                        
                         
                     </form>
 
